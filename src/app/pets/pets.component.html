@@ -1,0 +1,22 @@
+
+<h2>Pets!</h2>
+<ul class="pets">
+    <li *ngFor="let pet of pets" (click)="onSelect(pet)">
+        <span class="badge">{{pet.id}}</span>
+        {{pet.name}} | 
+        {{pet.breed}} |
+        <i>{{pet.age}}</i>
+    </li>
+</ul>
+<div *ngIf="selectedPet1">
+    
+    <h2>{{selectedPet1.name}} Details</h2>
+    <div><span>id: </span>{{selectedPet1.id}}</div>
+    <div>
+      <label>breed:
+        <input [(ngModel)]="selectedPet1.breed" placeholder="breed"/>
+      </label>
+    </div>
+    <div><span>age: </span>{{selectedPet1.age}}</div>
+</div>
+
