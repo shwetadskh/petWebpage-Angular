@@ -3,4 +3,5 @@ export interface Pet1 {
     name: string;
     breed: string;
     age: number;
+    img: string;
   }

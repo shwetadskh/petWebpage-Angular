@@ -1,0 +1,14 @@
+<p>pets-detail works!</p>
+<div *ngIf="Pet1">
+    <img src={{Pet1.img}} alt={{Pet1.name}} style="width: 400px; height: 300px">
+      <h2>{{Pet1.name}} Details</h2>
+      <div><span>id: </span>{{Pet1.id}}</div>
+      <div>
+        <label>breed:
+          <input [(ngModel)]="Pet1.breed" placeholder="breed"/>
+        </label>
+      </div>
+      <div><span>age: </span>{{Pet1.age}}</div>
+  </div>
+
+  
